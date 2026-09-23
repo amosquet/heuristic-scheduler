@@ -1,4 +1,4 @@
-# Heuristic Print Queue Scheduler (`heuristic-scheduler`)
+# Heuristic Print Queue Scheduler
 
 [![Python Version](https://img.shields.io/badge/python-3.13%2B-blue.svg)](pyproject.toml)
 [![Package Manager](https://img.shields.io/badge/managed%20by-uv-purple.svg)](https://github.com/astral-sh/uv)
