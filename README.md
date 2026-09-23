@@ -15,7 +15,7 @@ An autonomous, starvation-resistant dynamic priority queue and discrete-event si
 Campus makerspaces and shared 3D printing labs (e.g., Purdue Bechtel Innovation Design Center, Purdue Hive) frequently suffer from severe queue bottlenecks when managed via standard First-Come, First-Served (FCFS) dispatching:
 
 - **Queue Starvation:** High-priority submissions (e.g., academic capstones, staff maintenance jobs) can indefinitely delay lower-priority student prints if priorities are static.
-- **Physical Handover Latency:** FCFS schedulers fail to account for post-print operations—such as print bed cooldown and manual part removal. Prints finish unmonitored and sit idle on heated build plates.
+- **Physical Handover Latency:** FCFS schedulers fail to account for post-print operations, such as print bed cooldown and manual part removal. Prints finish unmonitored and sit idle on heated build plates.
 - **Dynamic Arrival Complexity:** Jobs arrive continuously at arbitrary timestamps with disparate build durations and priority tiers.
 
 `heuristic-scheduler` addresses these challenges by implementing a **discrete-event timeline simulation** with a **mathematically optimized dynamic priority queue** utilizing linear time-dependent aging and physical bed-clearance buffer windows.
@@ -57,10 +57,8 @@ Because the $\alpha \cdot t$ term increases at the exact same rate for every que
 
 When multiple jobs possess identical static priority scores, ties are resolved deterministically using a multi-key tuple:
 
-$$\text{Heap Key} = (-S_i, \; t_{\text{submit}, i}, \; \text{job\_id}_i, \; \text{job})$$
-
 1. **Static Priority Score** (highest score first via negation)
-2. **Submission Time** (earliest arrival first—FCFS fairness)
+2. **Submission Time** (earliest arrival first, enforcing FCFS fairness)
 3. **Job ID** (lowest numerical ID first for deterministic ordering)
 
 ### Soft Cancellation (Tombstoning)
@@ -143,7 +141,7 @@ uv run python main.py jobs1.json --alpha 0.08 --buffer-time 300
 
 | Option          | Short |  Type   |   Default   | Description                                                           |
 | :-------------- | :---: | :-----: | :---------: | :-------------------------------------------------------------------- |
-| `filepath`      |   —   |  `str`  | `jobs.json` | Path to the JSON dataset containing print jobs.                       |
+| `filepath`      |  N/A  |  `str`  | `jobs.json` | Path to the JSON dataset containing print jobs.                       |
 | `--alpha`       | `-a`  | `float` |   `0.05`    | Dynamic aging coefficient ($\text{priority points} / \text{second}$). |
 | `--buffer-time` | `-b`  |  `int`  |    `600`    | Physical transition buffer in seconds (bed cooldown + part removal).  |
 
