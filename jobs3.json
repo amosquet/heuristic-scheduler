@@ -1,0 +1,122 @@
+[
+  {
+    "job_id": 701,
+    "base_weight": 10,
+    "submit_time": 0,
+    "print_duration": 28800
+  },
+  {
+    "job_id": 205,
+    "base_weight": 10,
+    "submit_time": 500,
+    "print_duration": 1800
+  },
+  {
+    "job_id": 312,
+    "base_weight": 50,
+    "submit_time": 600,
+    "print_duration": 7200
+  },
+  {
+    "job_id": 444,
+    "base_weight": 10,
+    "submit_time": 1000,
+    "print_duration": 600
+  },
+  {
+    "job_id": 118,
+    "base_weight": 10,
+    "submit_time": 1500,
+    "print_duration": 14400
+  },
+  {
+    "job_id": 992,
+    "base_weight": 100,
+    "submit_time": 2000,
+    "print_duration": 3600
+  },
+  {
+    "job_id": 533,
+    "base_weight": 20,
+    "submit_time": 2000,
+    "print_duration": 1200
+  },
+  {
+    "job_id": 876,
+    "base_weight": 10,
+    "submit_time": 3600,
+    "print_duration": 5400
+  },
+  {
+    "job_id": 211,
+    "base_weight": 10,
+    "submit_time": 3600,
+    "print_duration": 1800
+  },
+  {
+    "job_id": 645,
+    "base_weight": 50,
+    "submit_time": 7200,
+    "print_duration": 3600
+  },
+  {
+    "job_id": 333,
+    "base_weight": 10,
+    "submit_time": 10000,
+    "print_duration": 7200
+  },
+  {
+    "job_id": 777,
+    "base_weight": 10,
+    "submit_time": 14000,
+    "print_duration": 900
+  },
+  {
+    "job_id": 102,
+    "base_weight": 500,
+    "submit_time": 25000,
+    "print_duration": 1200
+  },
+  {
+    "job_id": 404,
+    "base_weight": 10,
+    "submit_time": 26000,
+    "print_duration": 3600
+  },
+  {
+    "job_id": 509,
+    "base_weight": 20,
+    "submit_time": 27000,
+    "print_duration": 18000
+  },
+  {
+    "job_id": 888,
+    "base_weight": 10,
+    "submit_time": 28000,
+    "print_duration": 600
+  },
+  {
+    "job_id": 155,
+    "base_weight": 10,
+    "submit_time": 120000,
+    "print_duration": 3600
+  },
+  {
+    "job_id": 289,
+    "base_weight": 100,
+    "submit_time": 121000,
+    "print_duration": 1800
+  },
+  {
+    "job_id": 390,
+    "base_weight": 10,
+    "submit_time": 121500,
+    "print_duration": 7200
+  },
+  {
+    "job_id": 912,
+    "base_weight": 10,
+    "submit_time": 121500,
+    "print_duration": 1800
+  }
+]

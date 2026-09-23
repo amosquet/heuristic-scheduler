@@ -1,0 +1,32 @@
+[
+    {
+        "job_id": 101,
+        "base_weight": 50,
+        "submit_time": 0,
+        "print_duration": 1800
+    },
+    {
+        "job_id": 102,
+        "base_weight": 90,
+        "submit_time": 300,
+        "print_duration": 3600
+    },
+    {
+        "job_id": 103,
+        "base_weight": 30,
+        "submit_time": 600,
+        "print_duration": 1200
+    },
+    {
+        "job_id": 104,
+        "base_weight": 70,
+        "submit_time": 2400,
+        "print_duration": 2400
+    },
+    {
+        "job_id": 105,
+        "base_weight": 10,
+        "submit_time": 3000,
+        "print_duration": 900
+    }
+]
